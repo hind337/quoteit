@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Log In</title>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/build/assets/app-uqLp7QqE.css">
+</head>
+
+<body class="min-h-screen bg-sun-night bg-cover bg-fixed bg-center bg-no-repeat font-sans text-sun-text"
+    style="
+        background-image:
+            linear-gradient(rgba(36, 25, 6, 0.70), rgba(36, 25, 6, 0.88)),
+            url('/images/sun-rays.jpg');
+    ">
+    <nav class="sticky top-0 z-50 border-b border-sun-gold/30 bg-sun-night/90 shadow-lg shadow-black/30 backdrop-blur-md">
+    <p class="site-name">QuoteIt</p>
+    <ul class="mx-auto flex max-w-7xl items-center gap-6 px-4 py-1">
+
+                    <li><a href="/signup" class="btn-primary">Sign Up</a></li>
+        
+        <li class="ml-auto"><img src="/images/logo.png" class="h-16 w-auto" alt="Logo"></li>
+
+    </ul>
+</nav>
+
+
+
+    <main>
+        <div class="grid h-full grid-cols-1 md:grid-cols-2">
+
+    
+
+    <div class="flex items-center justify-center p-8">
+        <form action="/" method="GET" class="auth-card mx-auto mt-5 w-full max-w-xl p-9">
+            
+
+            <h2 class="mb-4 text-center font-serif text-4xl font-bold text-sun-gold">Log In</h2>
+
+            <div class="mb-4">
+                <label for="email" class="label">Email</label>
+                <input id="email" type="email" class="input peer user-invalid:border-red-500" required
+                    pattern="[^@\s]+@[^@\s]+\.[A-Za-z]{2,}">
+                <p class="mt-1 text-xs text-sun-text/70 peer-user-invalid:text-red-400">
+                    A valid email, e.g. name@example.com
+                </p>
+
+            </div>
+
+            <div class="mb-4">
+                <label for="password" class="label">Password</label>
+                <input id="password" type="password" class="input peer user-invalid:border-red-500" required
+                    minlength="8">
+                <p class="mt-1 text-xs text-sun-text/70 peer-user-invalid:text-red-400">
+                    At least 8 characters.
+                </p>
+            </div>
+
+            <button type="submit" class="btn-primary w-full">Log In</button>
+        </form>
+    </div>
+
+
+
+    <div class="hidden md:block">
+        <div class="mt-20 hidden md:order-last md:flex md:items-center md:justify-center">
+            <img src="/images/sun-face.jpg" alt="Painting of a smiling sun"
+                class="w-full max-w-sm rounded-3xl object-cover shadow-2xl shadow-black/50 ring-2 ring-sun-gold/50">
+        </div>
+
+    </div>
+</div>
+
+    </main>
+
+</body>
+
+</html>
